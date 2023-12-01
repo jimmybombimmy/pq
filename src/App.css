@@ -1,14 +1,81 @@
-.pqText {
-  text-align: center;
-  height: 100vh;
+body {
+  height: 400vh;
 }
 
+
+.pqText {
+  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100px;
+  bottom: 10px;
+  height: 41px;
+}
+
+
 .pqText p {
+  height: 41px;
+  bottom: 8px;
+  position: relative;
   display: inline-block;
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  
 }
 
 .pqMirror { 
   transform: scale(-1, 1);
+}
+
+.customNav {
+  position: sticky;
+  justify-self: center;
+}
+
+.container-fluid {
+  padding: 0;
+  
+}
+
+.middleNav {
+  bottom: 0;
+}
+
+.navInvRight {
+  width: 100px;
+  margin: 0;
+  border-bottom: 1px solid rgb(222,226,230);
+  height: 42px;
+}
+
+.navLogo {
+  margin: 0;
+  border-bottom: 1px solid rgb(222,226,230);
+  padding: 0;
+}
+
+.navbar {
+  padding-top: 0;
+}
+
+@media (max-width: 576px) {
+  .nav-link {
+    font-size: 2rem;
+  }
+
+  .navInvRight {
+    display: none
+  }
+
+  .navLogo {
+    border: 0px;
+  }
+}
+
+
+@media (min-width: 575) {
+  .navbar-collapse {
+    height: 41px;
+  }
 }
