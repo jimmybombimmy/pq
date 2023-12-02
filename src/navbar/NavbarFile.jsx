@@ -6,22 +6,22 @@ function NavbarFile() {
   return (
     <Navbar collapseOnSelect expand="sm">
       <Container fluid>
-        <Navbar.Brand className="navLogo" href="#">
+        <Navbar.Brand className="navLogo" href="music">
           <Logo />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="navbarScroll responsive-navbar-nav">
           <Nav variant="tabs" className="middleNav navbar-collapse justify-content-center me-auto">
-            <Nav.Link href="#action1">music</Nav.Link>
-            <Nav.Link href="#action2">production</Nav.Link>
-            <Nav.Link href="#action3">audio</Nav.Link>
-            <Nav.Link href="#action4">about</Nav.Link>
+            <Nav.Link href="music">music</Nav.Link>
+            <Nav.Link href="production">production</Nav.Link>
+            <Nav.Link href="audio">audio</Nav.Link>
+            <Nav.Link href="about">about</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <Navbar.Brand
           className="sticky-top navInvRight"
           href="#"
-        ></Navbar.Brand>
+        ><p>Socials</p></Navbar.Brand>
       </Container>
     </Navbar>
   );
