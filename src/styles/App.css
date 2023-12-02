@@ -57,13 +57,17 @@ body {
 }
 
 .navbar {
-  padding-top: 0;
+  padding: 0;
 }
 
 .navbar-toggler {
   width: 60px;
   margin-right: 20px;
   text-align: center;
+}
+
+.nav-link {
+  margin: 0 3%;
 }
 
 @media (max-width: 576px) {
@@ -85,4 +89,15 @@ body {
   .navbar-collapse {
     height: 41px;
   }
+}
+
+
+.navFile {
+  position: fixed;
+  width: 100vw;
+  background-color: white;
+}
+
+.navGap {
+  height: 100px
 }

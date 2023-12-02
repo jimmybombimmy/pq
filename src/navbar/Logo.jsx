@@ -3,29 +3,60 @@ import "../styles/App.css";
 
 function Logo() {
   const [pqText, setPqText] = useState("p");
-  const [pqMirror, setPqMirror] = useState("q");
-  const [x, setX] = useState(0);
+  const [pqMirror, setPqMirror] = useState("p");
+  const [y, setY] = useState(0);
   const [seconds, setSeconds] = useState(0);
-  const [xxx, setxxx] = useState(0);
+  const [yyy, setyyy] = useState(0);
   const [positionCompare, setPositionCompare] = useState([0, 0]);
 
   const chars1 = "abcdefghijklmnoppppppppqrstuvwxyz";
-  function randomLetter(chars) {
+  const chars2 = "1234567890!?{}[]()|/@£$%&";
+  const chars3 = "<>,.:;'-=+_~*";
+
+  function randomLetter(speed) {
     let result = "";
-    const letterPicked = Math.floor(Math.random() * chars.length);
-    result = chars[letterPicked];
-    return result;
+
+    if (speed > 300) {
+      const letterPicked = Math.floor(Math.random() * chars1.length);
+      const letterPicked2 = Math.floor(Math.random() * chars2.length)
+      const letterPicked3 = Math.floor(Math.random() * chars3.length)
+      result = chars3[letterPicked3] + chars2[letterPicked2] ;
+    } else if (speed > 300) {
+      const letterPicked = Math.floor(Math.random() * chars1.length);
+      const letterPicked2 = Math.floor(Math.random() * chars2.length)
+      const letterPicked3 = Math.floor(Math.random() * chars3.length)
+      result = chars2[letterPicked2] + chars1[letterPicked] + chars3[letterPicked3] ;
+    }
+    else if (speed > 200) {
+      const letterPicked = Math.floor(Math.random() * chars1.length);
+      const letterPicked2 = Math.floor(Math.random() * chars3.length)
+      result = chars3[letterPicked2] + chars1[letterPicked] ;
+    } else if (speed > 100) {
+      const letterPicked = Math.floor(Math.random() * chars1.length);
+      const letterPicked2 = Math.floor(Math.random() * chars3.length)
+      result = chars1[letterPicked]+ chars3[letterPicked2] ;
+    } else if (speed > 50) {
+      const letterPicked = Math.floor(Math.random() * chars1.length);
+      result = chars1[letterPicked];
+    }  else {
+      result = "p"
+    }
+    return setPqText(result);
   }
 
   useEffect(() => {
     setPqMirror(pqText);
   }, [pqText]);
 
-  onmousemove = (event) => {
-    setX(event.clientX);
+  // onmousemove = (event) => {
+  //   setX(event.clientX);
+  // };
+
+  onscroll = (event) => {
+    setY(scrollY);
   };
 
-  const changeSpeed = 20;
+  const changeSpeed = 15;
 
   useEffect(() => {
     const interval1 = setInterval(() => {
@@ -35,22 +66,22 @@ function Logo() {
   }, []);
 
   useEffect(() => {
-    const realX = x;
+    const realY = y;
     const interval = setInterval(() => {
-      setxxx(realX);
-      setPositionCompare([xxx, positionCompare[0]]);
-      diffo(numDiff(positionCompare));
+      setyyy(realY);
+      setPositionCompare([yyy, positionCompare[0]]);
+      randomLetter(numDiff(positionCompare));
     }, changeSpeed);
     return () => clearInterval(interval);
   }, [seconds]);
 
-  function diffo(num) {
-    if (num > 50) {
-      setPqText(randomLetter(chars1));
-    } else {
-      setPqText(randomLetter("p"));
-    }
-  }
+  // function diffo(num) {
+  //   if (num > 50) {
+  //     setPqText(randomLetter(num));
+  //   } else {
+  //     setPqText(randomLetter("p"));
+  //   }
+  // }
 
   function numDiff(arr) {
     if (arr[0] > arr[1]) {
