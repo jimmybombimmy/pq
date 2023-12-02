@@ -2,6 +2,28 @@ body {
   height: 400vh;
 }
 
+/* ----------Navbar----------- */
+
+.navFile {
+  position: fixed;
+  width: 100vw;
+  background-color: white;
+}
+
+.container-fluid {
+  padding: 0;
+  padding-top: 20px;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navGap {
+  height: 100px
+}
+
+/* pq Logo */
 
 .pqText {
   text-align: center;
@@ -28,36 +50,28 @@ body {
   transform: scale(-1, 1);
 }
 
-.customNav {
-  position: sticky;
-  justify-self: center;
-}
-
-.container-fluid {
-  padding: 0;
-  padding-top: 20px;
-  
-}
-
-.middleNav {
-  bottom: 0;
-}
-
-.navInvRight {
-  width: 100px;
-  margin: 0;
-  border-bottom: 1px solid rgb(222,226,230);
-  height: 42px;
-}
-
 .navLogo {
   margin: 0;
   border-bottom: 1px solid rgb(222,226,230);
   padding: 0;
 }
 
-.navbar {
-  padding: 0;
+
+/* Center Nav */
+
+.customNav {
+  position: sticky;
+  justify-self: center;
+}
+
+.middleNav {
+  bottom: 0;
+}
+
+
+
+.nav-link {
+  margin: 0 3%;
 }
 
 .navbar-toggler {
@@ -66,9 +80,18 @@ body {
   text-align: center;
 }
 
-.nav-link {
-  margin: 0 3%;
+
+/* Nav Socials */
+
+.navInvRight {
+  width: 100px;
+  margin: 0;
+  border-bottom: 1px solid rgb(222,226,230);
+  height: 42px;
 }
+
+
+/* Nav Media Queries */
 
 @media (max-width: 576px) {
   .nav-link {
@@ -84,7 +107,6 @@ body {
   }
 }
 
-
 @media (min-width: 575) {
   .navbar-collapse {
     height: 41px;
@@ -92,12 +114,5 @@ body {
 }
 
 
-.navFile {
-  position: fixed;
-  width: 100vw;
-  background-color: white;
-}
 
-.navGap {
-  height: 100px
-}
+
