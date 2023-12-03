@@ -35,7 +35,7 @@ function Logo() {
       const letterPicked = Math.floor(Math.random() * chars1.length);
       const letterPicked2 = Math.floor(Math.random() * chars3.length)
       result = chars1[letterPicked]+ chars3[letterPicked2] ;
-    } else if (speed > 50) {
+    } else if (speed > 20) {
       const letterPicked = Math.floor(Math.random() * chars1.length);
       result = chars1[letterPicked];
     }  else {
@@ -50,13 +50,14 @@ function Logo() {
 
   // onmousemove = (event) => {
   //   setX(event.clientX);
+  //   // console.log(event.clientX)
   // };
 
   onscroll = (event) => {
     setY(scrollY);
   };
 
-  const changeSpeed = 15;
+  const changeSpeed = 25;
 
   useEffect(() => {
     const interval1 = setInterval(() => {

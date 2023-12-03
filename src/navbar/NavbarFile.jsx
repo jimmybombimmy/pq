@@ -14,7 +14,7 @@ function NavbarFile() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="navbarScroll responsive-navbar-nav">
               <Nav
-                variant="tabs"
+                
                 className="middleNav navbar-collapse justify-content-center me-auto"
               >
                 <Nav.Link href="music">music</Nav.Link>
