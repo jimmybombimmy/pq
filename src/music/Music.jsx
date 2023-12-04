@@ -5,29 +5,30 @@ import { useState } from "react";
 
 function Music() {
   const [openPq, setOpenPq] = useState(false);
+  const [openNih, setOpenNih] = useState(false);
+
 
   return (
     <main>
       <main className="musicContainer">
-        <section className="nusicSection">
+        <section className="musicSection">
+          <p
+            className="audioTitle"
+            onClick={() => setOpenPq(!openPq)}
+            aria-controls="example-collapse-text"
+            aria-expanded={openPq}
+          >
+            pq <span className="plusMinus">{openPq ? "-" : "+"}</span>
+          </p>
+          <Collapse in={openPq}>
+            <article class="audioInfoDropdown" id="example-collapse-text">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. Nihil anim keffiyeh
+              helvetica, craft beer labore wes anderson cred nesciunt sapiente
+              ea proident.
+            </article>
+          </Collapse>
           <div className="pqGridSection">
-            <p
-              className="audioTitle"
-              onClick={() => setOpenPq(!openPq)}
-              aria-controls="example-collapse-text"
-              aria-expanded={openPq}
-            >
-              pq
-            </p>
-            <br />
-            <Collapse in={openPq}>
-              <article class="audioInfoDropdown" id="example-collapse-text">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life
-                accusamus terry richardson ad squid. Nihil anim keffiyeh
-                helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                ea proident.
-              </article>
-            </Collapse>
             <iframe
               className="musImg pqImg1"
               src="https://bandcamp.com/EmbeddedPlayer/album=3375579364/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
@@ -100,8 +101,23 @@ function Music() {
       </main>
       <main className="musicContainer">
         <section className="musicSection">
+          <p
+            className="audioTitle"
+            onClick={() => setOpenNih(!openNih)}
+            aria-controls="example-collapse-text"
+            aria-expanded={openNih}
+          >
+            nihiloxica <span>{openNih ? "-" : "+"}</span>
+          </p>
+          <Collapse in={openNih}>
+            <article class="audioInfoDropdown" id="example-collapse-text">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. Nihil anim keffiyeh
+              helvetica, craft beer labore wes anderson cred nesciunt sapiente
+              ea proident.
+            </article>
+          </Collapse>
           <div className="nihiloxicaGridSection">
-            <p className="audioTitle">nihiloxica</p>
             <iframe
               className="musImg nihImg1"
               src="https://bandcamp.com/EmbeddedPlayer/album=4073007018/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
