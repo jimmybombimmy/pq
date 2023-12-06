@@ -11,6 +11,7 @@ function App() {
     <main>
       <NavbarFile />
       <Routes>
+        <Route path="/" element={<Music />}></Route>
         <Route path="/music" element={<Music />}></Route>
         <Route path="/production" element={<Production />}></Route>
         <Route path="/audio" element={<Audio />}></Route>
