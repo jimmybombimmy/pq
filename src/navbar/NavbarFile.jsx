@@ -29,9 +29,9 @@ function NavbarFile() {
           </Container>
         </Navbar>
       </nav>
-      <div className="navGap">
+      {/* <div className="navGap">
 
-      </div>
+      </div> */}
     </main>
   );
 }

@@ -2,6 +2,15 @@
 
 .musicPageFull {
   margin-bottom: 50px;
+
+}
+
+.musicPageInner {
+  height: 100vh;
+  overflow-y:auto;
+  overflow-x: hidden;
+  perspective: 10px;
+  padding-top: 100px;
 }
 
 .musicContainer {
@@ -13,6 +22,7 @@
   align-self: center;
   justify-content: center;
   padding-bottom: 50px;
+  
 }
 
 .musicContainerSmall {
@@ -27,6 +37,30 @@
 
 .musicSection {
   width: 100vw;
+ 
+}
+
+.bgParDiv {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+  left: 1000px;
+  top: -1000px
+}
+
+.bgParText {
+  position: absolute;
+  display:flex;
+  align-self: center;
+  color: rgb(230, 230, 230);
+  font-size: 500px;
+  z-index: -1;
+  width: 70vw;
+  transform: translateZ(-40px) scale(-5, 5);
 }
 
 .audioTitle {

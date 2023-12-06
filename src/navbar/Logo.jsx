@@ -35,7 +35,7 @@ function Logo() {
       const letterPicked = Math.floor(Math.random() * chars1.length);
       const letterPicked2 = Math.floor(Math.random() * chars3.length)
       result = chars1[letterPicked]+ chars3[letterPicked2] ;
-    } else if (speed > 20) {
+    } else if (speed > 2) {
       const letterPicked = Math.floor(Math.random() * chars1.length);
       result = chars1[letterPicked];
     }  else {
@@ -70,6 +70,7 @@ function Logo() {
     const realY = y;
     const interval = setInterval(() => {
       setyyy(realY);
+      console.log(yyy)
       setPositionCompare([yyy, positionCompare[0]]);
       randomLetter(numDiff(positionCompare));
     }, changeSpeed);

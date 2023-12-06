@@ -8,9 +8,17 @@ function Music() {
   const [openNih, setOpenNih] = useState(false);
   const [openHidc, setOpenHidc] = useState(false);
 
+  const pqDesc = `this is what i make when left to my own devices. i make a range
+  of stuff from all-out club bangers to ambient to beats for mcs.
+  i have releases on lapsus records, adepta editions, spooky shit,
+  hakuna kulala and more. this section is for full eps etc.
+  remixes and singles i’ll list further down.`
+
   return (
     <main className="musicPageFull">
-      <main className="pqCont musicContainer">
+      <main className="musicPageInner">
+      <div className="bgParDiv"><h1 className="bgParText pqParBg">pq</h1></div>
+      <section className="pqCont musicContainer">
         <section className="musicSection">
           <div className="pqGridSection">
             <p
@@ -23,7 +31,7 @@ function Music() {
             </p>
             <Collapse in={openPq}>
               <article class="audioInfoDropdown" id="example-collapse-text">
-              this is what i make when left to my own devices. i make a range of stuff from all-out club bangers to ambient to beats for mcs. i have releases on lapsus records, adepta editions, spooky shit, hakuna kulala and more. this section is for full eps etc. remixes and singles i’ll list further down.
+                {pqDesc}
               </article>
             </Collapse>
             <iframe
@@ -95,8 +103,9 @@ function Music() {
             </iframe>
           </div>
         </section>
-      </main>
-      <main className="nihCont musicContainer">
+      </section>
+      {/* <div className="bgParDiv"><h1 className="bgParText">nihiloxica</h1></div> */}
+      <section className="nihCont musicContainer">
         <section className="musicSection">
           <div className="nihiloxicaGridSection">
             <p
@@ -105,11 +114,16 @@ function Music() {
               aria-controls="audioInfoDropDown"
               aria-expanded={openNih}
             >
-              nihiloxica <span className="plusMinus">{openNih ? "-" : "+"}</span>
+              nihiloxica{" "}
+              <span className="plusMinus">{openNih ? "-" : "+"}</span>
             </p>
             <Collapse in={openNih}>
               <article class="audioInfoDropdown" id="example-collapse-text">
-              a project i started with spooky-j in 2017 in kampala which is still going to this day. we combine western modern dance music traditions with the drumming and dance traditions of buganda, the central kingdom of uganda. i play synth, everyone else plays drums.
+                a project i started with spooky-j in 2017 in kampala which is
+                still going to this day. we combine western modern dance music
+                traditions with the drumming and dance traditions of buganda,
+                the central kingdom of uganda. i play synth, everyone else plays
+                drums.
               </article>
             </Collapse>
             <iframe
@@ -154,8 +168,8 @@ function Music() {
             ></img>
           </div>
         </section>
-      </main>
-      <main className="hidcCont musicContainer">
+      </section>
+      <section className="hidcCont musicContainer">
         <section className="musicSection">
           <div className="hidcGridSection">
             <p
@@ -164,11 +178,16 @@ function Music() {
               aria-controls="audioInfoDropDown"
               aria-expanded={openHidc}
             >
-              hot in da club <span className="plusMinus">{openHidc ? "-" : "+"}</span>
+              hot in da club{" "}
+              <span className="plusMinus">{openHidc ? "-" : "+"}</span>
             </p>
             <Collapse in={openHidc}>
               <article class="audioInfoDropdown" id="example-collapse-text">
-              a live hardware improv trio consisting of me, ekhe and spooky-j. we describe ourselves as hardcore technopunks. we basically improvise silly and hard dance music and record the results. we also do this in front of live crowds. laughing while dancing is the ultimate goal.
+                a live hardware improv trio consisting of me, ekhe and spooky-j.
+                we describe ourselves as hardcore technopunks. we basically
+                improvise silly and hard dance music and record the results. we
+                also do this in front of live crowds. laughing while dancing is
+                the ultimate goal.
               </article>
             </Collapse>
             <iframe
@@ -200,23 +219,48 @@ function Music() {
             </iframe>
           </div>
         </section>
-      </main>
-      <main className="collabsCont musicContainer">
+      </section>
+      <section className="collabsCont musicContainer">
         <section className="musicSection">
           <div className="collabsGridSection">
             <p className="audioTitle">collabs</p>
-            <iframe className="musImg collabsImg1" src="https://bandcamp.com/EmbeddedPlayer/album=22457107/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://opaltapes.com/album/not-in-da-club">Not In Da Club by Not In Da Club</a></iframe>
+            <iframe
+              className="musImg collabsImg1"
+              src="https://bandcamp.com/EmbeddedPlayer/album=22457107/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+              seamless
+            >
+              <a href="https://opaltapes.com/album/not-in-da-club">
+                Not In Da Club by Not In Da Club
+              </a>
+            </iframe>
           </div>
         </section>
-      </main>
-      <main className="remixCont musicContainer">
+      </section>
+      <section className="remixCont musicContainer">
         <section className="musicSection">
           <div className="remixGridSection">
             <p className="audioTitle">remixes</p>
-            <iframe className="musImg remixImg1" src="https://bandcamp.com/EmbeddedPlayer/album=4195060404/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1944329998/transparent=true/" seamless><a href="https://nyegenyegetapes.bandcamp.com/album/ekuka">Ekuka by pq</a></iframe>
-            <iframe className="musImg remixImg2" src="https://bandcamp.com/EmbeddedPlayer/album=4202699141/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=852843746/transparent=true/" seamless><a href="https://nihiloxica.bandcamp.com/album/kaloli-recycled">Kaloli Recycled by Nihiloxica</a></iframe>
+            <iframe
+              className="musImg remixImg1"
+              src="https://bandcamp.com/EmbeddedPlayer/album=4195060404/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1944329998/transparent=true/"
+              seamless
+            >
+              <a href="https://nyegenyegetapes.bandcamp.com/album/ekuka">
+                Ekuka by pq
+              </a>
+            </iframe>
+            <iframe
+              className="musImg remixImg2"
+              src="https://bandcamp.com/EmbeddedPlayer/album=4202699141/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=852843746/transparent=true/"
+              seamless
+            >
+              <a href="https://nihiloxica.bandcamp.com/album/kaloli-recycled">
+                Kaloli Recycled by Nihiloxica
+              </a>
+            </iframe>
           </div>
         </section>
+      </section>
       </main>
     </main>
   );
