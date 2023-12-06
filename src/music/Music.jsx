@@ -22,7 +22,7 @@ function Music() {
               pq <span className="plusMinus">{openPq ? "-" : "+"}</span>
             </p>
             <Collapse in={openPq}>
-              <article class="audioInfoDropdown" id="example-collapse-text">
+              <article className="audioInfoDropdown" id="example-collapse-text">
               this is what i make when left to my own devices. i make a range of stuff from all-out club bangers to ambient to beats for mcs. i have releases on lapsus records, adepta editions, spooky shit, hakuna kulala and more. this section is for full eps etc. remixes and singles i’ll list further down.
               </article>
             </Collapse>
@@ -108,7 +108,7 @@ function Music() {
               nihiloxica <span className="plusMinus">{openNih ? "-" : "+"}</span>
             </p>
             <Collapse in={openNih}>
-              <article class="audioInfoDropdown" id="example-collapse-text">
+              <article className="audioInfoDropdown" id="example-collapse-text">
               a project i started with spooky-j in 2017 in kampala which is still going to this day. we combine western modern dance music traditions with the drumming and dance traditions of buganda, the central kingdom of uganda. i play synth, everyone else plays drums.
               </article>
             </Collapse>
@@ -167,7 +167,7 @@ function Music() {
               hot in da club <span className="plusMinus">{openHidc ? "-" : "+"}</span>
             </p>
             <Collapse in={openHidc}>
-              <article class="audioInfoDropdown" id="example-collapse-text">
+              <article className="audioInfoDropdown" id="example-collapse-text">
               a live hardware improv trio consisting of me, ekhe and spooky-j. we describe ourselves as hardcore technopunks. we basically improvise silly and hard dance music and record the results. we also do this in front of live crowds. laughing while dancing is the ultimate goal.
               </article>
             </Collapse>

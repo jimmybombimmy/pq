@@ -21,7 +21,7 @@ body {
 }
 
 .navbar {
-  padding: 0;
+  padding: 0 0 10px;
 }
 
 .navGap {
@@ -35,7 +35,8 @@ body {
   position: sticky;
   top: 0;
   width: 100px;
-  bottom: 10px;
+  margin-right: 124px;
+  bottom: -10px;
   height: 41px;
   font-weight: 300;
 }
@@ -44,7 +45,7 @@ body {
   height: 41px;
   /* top: 4px; */
   color: grey;
-  bottom: 7px;
+  bottom: 10px;
   position: relative;
   display: inline-block;
   font-size: 2rem;
@@ -93,15 +94,28 @@ body {
 /* Nav Socials */
 
 .navInvRight {
-  width: 100px;
-  margin: 0;
+  /* width: 100px; */
+  margin: 10px 27px 0;
   /* border-bottom: 1px solid rgb(222,226,230); */
   height: 42px;
+  position: relative;
+  
+}
+
+.navLogo {
+  height: 32px;
+  padding: 0 14px 0 10px;
 }
 
 /* Nav Media Queries */
 
-@media (max-width: 576px) {
+@media (max-width: 1063px) {
+  .email2Delete {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
   .nav-link {
     font-size: 1.5rem;
   }
@@ -113,11 +127,25 @@ body {
   .navLogo {
     border: 0px;
   }
+
+  .navLogoDD {
+    height: 32px;
+    width: 32px;
+    margin: 12px 12px 30px;
+  }
+
 }
 
-@media (min-width: 575) {
+@media (min-width: 767px) {
   .navbar-collapse {
     height: 41px;
   }
+  .burgerSocials {
+    display: none;
+  }
+  .navLogoDD {
+    padding: 24px;
+  }
+  
 }
 
