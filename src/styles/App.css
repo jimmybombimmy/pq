@@ -5,6 +5,10 @@ body {
   font-weight: 300;
 }
 
+body:hover {
+  cursor:default;
+}
+
 /* ----------Navbar----------- */
 
 .navFile {
