@@ -174,14 +174,16 @@
 
 }
 
-
+.flipbox {
+  box-shadow: 3px 3px 5px lightgrey; 
+}
 
 .flipboxInner {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: left;
-  transition: transform 0.1s;
+  transition: transform 0s;
   transform-style: preserve-3d;
 }
 
@@ -206,6 +208,7 @@
 .flipboxFrontImg {
   height: var(--boxHW);
   width: var(--boxHW);
+  border-radius:5px;
 }
 
 .flipboxBack {

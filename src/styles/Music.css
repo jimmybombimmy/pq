@@ -78,6 +78,8 @@
   .musImg {
     height: 100%;
     justify-self: stretch;
+    border-radius:5px;
+    box-shadow: 3px 3px 10px lightgrey;
   }
 
   .musImgSmall {
