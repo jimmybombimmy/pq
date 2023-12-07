@@ -16,7 +16,7 @@ function Production() {
           aria-expanded={openProdInfo}
         >
           recording / mixing / mastering{" "}
-          <span className="plusMinus">{openProdInfo ? "+" : "-"}</span>
+          <span className="plusMinus">{openProdInfo ? "-" : "+"}</span>
         </h1>
         <Collapse in={openProdInfo}>
           <article className="prodInfoDropdown">
