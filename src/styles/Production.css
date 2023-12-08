@@ -23,7 +23,7 @@
 }
 
 .prodContainer {
-  margin-top: 50px;
+  margin: 100px 0 100px;
   padding: 0;
 }
 
@@ -175,7 +175,7 @@
 }
 
 .flipbox {
-  box-shadow: 3px 3px 5px lightgrey; 
+  /* box-shadow: 3px 3px 5px lightgrey;  */
 }
 
 .flipboxInner {
@@ -208,7 +208,7 @@
 .flipboxFrontImg {
   height: var(--boxHW);
   width: var(--boxHW);
-  border-radius:5px;
+  /* border-radius:5px; */
 }
 
 .flipboxBack {
