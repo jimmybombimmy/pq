@@ -29,7 +29,7 @@
   width: 100vw;
 }
 
-.audioTitle {
+.musicTitle {
   color: grey;
   margin-bottom: 5px;
   justify-self: left;
@@ -39,13 +39,13 @@
   font-size: 1.5rem;
 }
 
-.audioTitle:hover {
+.musicTitle:hover {
   cursor: pointer;
   font-weight: 400;
   color: grey;
 }
 
-.audioInfoDropdown {
+.musicInfoDropdown {
   color: grey;
   margin-bottom: 5px;
 }
@@ -87,7 +87,7 @@
     justify-self: stretch;
   }
 
-  .audioTitle {
+  .musicTitle {
     position: relative;
     top: 40px;
     grid-column: 1/5;
@@ -272,7 +272,7 @@
 }
 
 @media (min-width: 696px) and (max-width: 1063px) {
-  .audioTitle {
+  .musicTitle {
     justify-self: center;
     position: relative;
     top: 20px;
@@ -473,13 +473,13 @@
     min-width: 400px;
   }
 
-  .audioTitle {
+  .musicTitle {
     min-width: 400px;
     display: inline;
     /* justify-self: center; */
   }
 
-  .audioInfoDropdown {
+  .musicInfoDropdown {
     /* justify-self: left; */
     margin-bottom: 5px;
   }
@@ -503,7 +503,7 @@
     min-width: 350px;
   }
 
-  .audioTitle {
+  .musicTitle {
     min-width: 350px;
     display: inline;
     justify-self: center;
@@ -528,7 +528,7 @@
     min-width: 300px;
   }
 
-  .audioTitle {
+  .musicTitle {
     min-width: 300px;
     display: inline;
     justify-self: center;
@@ -566,7 +566,7 @@
   .pqImg4 {
     display: none;
   }
-  .audioTitle {
+  .musicTitle {
     height: 34px;
     font-size: 1.5rem;
   }
