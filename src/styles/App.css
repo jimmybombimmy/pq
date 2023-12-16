@@ -9,6 +9,19 @@ body:hover {
   cursor:default;
 }
 
+article {
+  line-height: 1.2rem;
+}
+
+h1 {
+  line-height: 2rem
+}
+
+p {
+  line-height: 1.2rem;
+  max-width: 600px;
+}
+
 /* ----------Navbar----------- */
 
 .navFile {
@@ -92,7 +105,7 @@ body:hover {
 
 .navbar-toggler {
   width: 60px;
-  margin-right: 20px;
+  margin-right: 38px;
   text-align: center;
 }
 

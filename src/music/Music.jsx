@@ -13,14 +13,14 @@ function Music() {
       <main className="pqCont musicContainer">
         <section className="musicSection">
           <div className="pqGridSection">
-            <p
+            <h2
               className="musicTitle"
               onClick={() => setOpenPq(!openPq)}
               aria-controls="musicInfoDropdown"
               aria-expanded={openPq}
             >
               pq <span className="plusMinus">{openPq ? "-" : "+"}</span>
-            </p>
+            </h2>
             <Collapse in={openPq}>
               <article className="musicInfoDropdown" id="example-collapse-text">
               this is what i make when left to my own devices. i make a range of stuff from all-out club bangers to ambient to beats for mcs. i have releases on lapsus records, adepta editions, spooky shit, hakuna kulala and more. this section is for full eps etc. remixes and singles i’ll list further down.
