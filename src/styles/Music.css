@@ -5,7 +5,7 @@
 }
 
 .musicContainer {
-  margin: -10px 20px 20px;
+  margin: 20px;
   padding-inline-start: 32px;
   padding-inline-end: 32px;
   max-width: 1000px;
@@ -272,6 +272,10 @@
 }
 
 @media (min-width: 696px) and (max-width: 1063px) {
+  .musicContainer {
+    margin: -10px 20px 20px;
+  }
+
   .musicTitle {
     justify-self: center;
     position: relative;
@@ -464,6 +468,11 @@
 }
 
 @media (min-width: 896px) and (max-width: 1063px) {
+
+  .musicContainer {
+    margin: -10px 20px 20px;
+  }
+
   .musImg {
     min-width: 400px;
     min-height: 400px;
@@ -494,6 +503,10 @@
 }
 
 @media (min-width: 796px) and (max-width: 895px) {
+
+  .musicContainer {
+    margin: -10px 20px 20px;
+  }
   .musImg {
     min-width: 350px;
     min-height: 350px;
@@ -544,6 +557,11 @@
 }
 
 @media (max-width: 695px) {
+
+  .musicContainer {
+    margin: 42px 20px 20px;
+  }
+
   .nihiloxicaGridSection {
     justify-content: center;
   }
