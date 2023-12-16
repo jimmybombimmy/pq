@@ -69,9 +69,14 @@ function Audio() {
               key="audioImgLarge"
             ></img>
             {audioInfo.map(function callback(value, index) {
+              let leftOrRightCol = ''
+              if (index % 2 === 0) {
+                leftOrRightCol = "audioImgColRight"
+              }
+
               return (
                 <img
-                  className={`audioImg audioImg${index + 1}`}
+                  className={`audioImg audioImg${index + 1} ${leftOrRightCol}`}
                   src={value.url}
                   key={`audioImg${index + 1}`}
                 ></img>
