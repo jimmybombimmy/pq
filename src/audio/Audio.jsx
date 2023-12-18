@@ -53,7 +53,7 @@ function Audio() {
       <section className="audioContainer">
         <section className="audioSection">
           <div className="audioGridSection">
-            <h1 className="audioTitle">audio editing / dialogue</h1>
+            <h1 className="audioTitle">audio editing</h1>
             <p className="audioInfo">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Praesentium obcaecati itaque deserunt sit asperiores quam iure
