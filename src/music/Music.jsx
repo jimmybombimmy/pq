@@ -3,6 +3,9 @@ import "../styles/Music.css";
 import Collapse from "react-bootstrap/Collapse";
 import { useState } from "react";
 
+import pqFaceImg from "`../../img/pq-face-1.png`"
+import nihBandImg from "../../img/nihiloxica-band1.png"
+
 function Music() {
   const [openPq, setOpenPq] = useState(false);
   const [openNih, setOpenNih] = useState(false);
@@ -55,7 +58,7 @@ function Music() {
             </iframe>
             <img
               className="musImg pqImg4"
-              src={`../../img/pq-face-1.png`}
+              src={pqFaceImg}
             ></img>
             <iframe
               className="musImg pqImg5"
@@ -150,7 +153,7 @@ function Music() {
             </iframe>
             <img
               className="musImg nihImg5"
-              src="../img/nihiloxica-band1.png"
+              src={nihBandImg}
             ></img>
           </div>
         </section>
