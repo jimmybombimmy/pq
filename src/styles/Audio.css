@@ -5,8 +5,6 @@
 
 .audioContainer {
   --maxWidth: 1200px;
-  padding-inline-start: 32px;
-  padding-inline-end: 32px;
   max-width: var(--maxWidth);
   display: flex;
   align-self: center;
@@ -196,7 +194,7 @@
 }
 
 
-@media (min-width: 886px) and (max-width: 1064px) {
+@media (min-width: 896px) and (max-width: 1064px) {
     .audioContainer {
       --maxWidth: 800px;
       margin: auto;
@@ -243,7 +241,7 @@
       max-width: var(--maxWidth);
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto auto repeat(8, minmax(auto, 200px));
+      grid-template-rows: auto auto repeat(8, minmax(auto, 190px));
       justify-content: center;
       gap: 10px;
     }
@@ -336,7 +334,7 @@
 }
 
 
-@media (min-width: 791px) and (max-width: 885px) {
+@media (min-width: 791px) and (max-width: 895px) {
   .audioContainer {
     --maxWidth: 700px;
     margin: auto;
@@ -384,7 +382,7 @@
     max-width: var(--maxWidth);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto repeat(12, minmax(auto, 230px));
+    grid-template-rows: auto auto repeat(12, minmax(auto, 225px));
     justify-content: center;
     gap: 10px;
   }
@@ -465,7 +463,7 @@
   }
 }
 
-@media (min-width: 696px) and (max-width: 895px) {
+@media (min-width: 696px) and (max-width: 790px) {
   .prodPageFull {
     --max-width: 80%;
     height: auto;

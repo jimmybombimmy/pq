@@ -100,7 +100,7 @@
 
 @media (min-width: 696px) and (max-width: 895px) {
   .prodPageFull {
-    --max-width: 80%;
+    --max-width: 700px;
     height: auto;
     max-width: var(--max-width);
     justify-self: center;
