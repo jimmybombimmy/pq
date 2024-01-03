@@ -99,14 +99,14 @@ function Music() {
       <main className="nihCont musicContainer">
         <section className="musicSection">
           <div className="nihiloxicaGridSection">
-            <p
+            <h2
               className="musicTitle"
               onClick={() => setOpenNih(!openNih)}
               aria-controls="musicInfoDropDown"
               aria-expanded={openNih}
             >
               nihiloxica <span className="plusMinus">{openNih ? "-" : "+"}</span>
-            </p>
+            </h2>
             <Collapse in={openNih}>
               <article className="musicInfoDropdown" id="example-collapse-text">
               a project i started with spooky-j in 2017 in kampala which is still going to this day. we combine western modern dance music traditions with the drumming and dance traditions of buganda, the central kingdom of uganda. i play synth, everyone else plays drums.
@@ -158,14 +158,14 @@ function Music() {
       <main className="hidcCont musicContainer">
         <section className="musicSection">
           <div className="hidcGridSection">
-            <p
+            <h2
               className="musicTitle"
               onClick={() => setOpenHidc(!openHidc)}
               aria-controls="musicInfoDropDown"
               aria-expanded={openHidc}
             >
               hot in da club <span className="plusMinus">{openHidc ? "-" : "+"}</span>
-            </p>
+            </h2>
             <Collapse in={openHidc}>
               <article className="musicInfoDropdown" id="example-collapse-text">
               a live hardware improv trio consisting of me, ekhe and spooky-j. we describe ourselves as hardcore technopunks. we basically improvise silly and hard dance music and record the results. we also do this in front of live crowds. laughing while dancing is the ultimate goal.
@@ -204,7 +204,7 @@ function Music() {
       <main className="collabsCont musicContainer">
         <section className="musicSection">
           <div className="collabsGridSection">
-            <p className="musicTitle">collabs</p>
+            <h2 className="musicTitle">collabs</h2>
             <iframe className="musImg collabsImg1" src="https://bandcamp.com/EmbeddedPlayer/album=22457107/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://opaltapes.com/album/not-in-da-club">Not In Da Club by Not In Da Club</a></iframe>
           </div>
         </section>
@@ -212,7 +212,7 @@ function Music() {
       <main className="remixCont musicContainer">
         <section className="musicSection">
           <div className="remixGridSection">
-            <p className="musicTitle">remixes</p>
+            <h2 className="musicTitle">remixes</h2>
             <iframe className="musImg remixImg1" src="https://bandcamp.com/EmbeddedPlayer/album=4195060404/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1944329998/transparent=true/" seamless><a href="https://nyegenyegetapes.bandcamp.com/album/ekuka">Ekuka by pq</a></iframe>
             <iframe className="musImg remixImg2" src="https://bandcamp.com/EmbeddedPlayer/album=4202699141/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=852843746/transparent=true/" seamless><a href="https://nihiloxica.bandcamp.com/album/kaloli-recycled">Kaloli Recycled by Nihiloxica</a></iframe>
           </div>
