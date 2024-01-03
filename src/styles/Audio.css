@@ -506,7 +506,7 @@
     padding: 0;
   }
   .audioPageFull {
-    --max-width: 90%;
+    width: calc(100vw - 76px);
     height: auto;
     max-width: var(--max-width);
     justify-self: center;

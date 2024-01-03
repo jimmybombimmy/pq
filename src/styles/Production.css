@@ -140,7 +140,7 @@
   .prodPageFull {
     --max-width: 90%;
     height: auto;
-    max-width: var(--max-width);
+    width: calc(100vw - 76px);
     justify-self: center;
     margin: 40px auto;
     color: grey;
