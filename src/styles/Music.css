@@ -31,12 +31,14 @@
 
 .musicTitle {
   color: grey;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+  right: 2px;
   justify-self: left;
   row-gap: none;
   position: relative;
   height: 30px;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .musicTitle:hover {
@@ -47,7 +49,7 @@
 
 .musicInfoDropdown {
   color: grey;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 
 .plusMinus {
@@ -585,7 +587,7 @@
     display: none;
   }
   .musicTitle {
-    height: 34px;
+    height: 20px;
     font-size: 1.5rem;
   }
 }

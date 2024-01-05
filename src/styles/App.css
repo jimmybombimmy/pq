@@ -22,6 +22,14 @@ p {
   max-width: 600px;
 }
 
+.h1Slash {
+  font-size: 1.75rem;
+}
+
+.h2Slash {
+  font-size: 1.3125rem;
+}
+
 /* ----------Navbar----------- */
 
 .navFile {

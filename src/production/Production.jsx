@@ -15,7 +15,7 @@ function Production() {
           aria-controls="audioInfoDropdown"
           aria-expanded={openProdInfo}
         >
-          recording / mixing / mastering{" "}
+          recording <span className="h1Slash">/</span> mixing <span className="h1Slash">/</span> mastering{" "}
           <span className="plusMinus">{openProdInfo ? "-" : "+"}</span>
         </h1>
         <Collapse in={openProdInfo}>
@@ -36,7 +36,7 @@ function Production() {
         </Collapse>
       </section>
       <section className="recCont prodContainer">
-        <h2 className="prodSectionTitle">full production / recording</h2>
+        <h2 className="prodSectionTitle">full production <span className="h2Slash">/</span> recording</h2>
         <div className="prodGridSection">
           <div flipbox className="flipbox">
             <div className="flipboxInner">
