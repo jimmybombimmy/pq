@@ -3,7 +3,11 @@ import "../styles/Music.css";
 import Collapse from "react-bootstrap/Collapse";
 import { useState } from "react";
 
-import { nihiloxicaReleases, pqReleases, hidcReleases } from "../data/music-data";
+import {
+  nihiloxicaReleases,
+  pqReleases,
+  hidcReleases,
+} from "../data/music-data";
 
 function Music() {
   const [openPq, setOpenPq] = useState(false);
@@ -21,8 +25,7 @@ function Music() {
               aria-controls="musicInfoDropdown"
               aria-expanded={openPq}
             >
-              Pete Jones <span className="h1Slash">/</span> pq{" "}
-              <span className="plusMinus">{openPq ? "-" : "+"}</span>
+              pq <span className="plusMinus">{openPq ? "-" : "+"}</span>
             </h2>
             <Collapse in={openPq}>
               <article className="musicInfoDropdown" id="example-collapse-text">
@@ -35,10 +38,23 @@ function Music() {
             </Collapse>
             {pqReleases.map((release, index) => {
               return (
-                <iframe className={`musImg pqImg${index + 1}`} src={release.import} seamless>
-                  <a href={release.link}>{release.title}</a>
-                </iframe>
-              )
+                <>
+                  {release.title === "IMG_ONLY" ? (
+                    <img
+                      src={release.import}
+                      className={`musImg pqImg${index + 1}`}
+                    />
+                  ) : (
+                    <iframe
+                      className={`musImg pqImg${index + 1}`}
+                      src={release.import}
+                      seamless
+                    >
+                      <a href={release.link}>{release.title}</a>
+                    </iframe>
+                  )}
+                </>
+              );
             })}
           </div>
         </section>
@@ -66,10 +82,23 @@ function Music() {
             </Collapse>
             {nihiloxicaReleases.map((release, index) => {
               return (
-                <iframe className={`musImg pqImg${index + 1}`} src={release.import} seamless>
-                  <a href={release.link}>{release.title}</a>
-                </iframe>
-              )
+                <>
+                  {release.title === "IMG_ONLY" ? (
+                    <img
+                      src={release.import}
+                      className={`musImg nihImg${index + 1}`}
+                    />
+                  ) : (
+                    <iframe
+                      className={`musImg nihImg${index + 1}`}
+                      src={release.import}
+                      seamless
+                    >
+                      <a href={release.link}>{release.title}</a>
+                    </iframe>
+                  )}
+                </>
+              );
             })}
           </div>
         </section>
@@ -98,10 +127,14 @@ function Music() {
 
             {hidcReleases.map((release, index) => {
               return (
-                <iframe className={`musImg pqImg${index + 1}`} src={release.import} seamless>
+                <iframe
+                  className={`musImg hidcImg${index + 1}`}
+                  src={release.import}
+                  seamless
+                >
                   <a href={release.link}>{release.title}</a>
                 </iframe>
-              )
+              );
             })}
           </div>
         </section>
