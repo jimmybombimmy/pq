@@ -12,6 +12,7 @@
   margin-bottom: 0px;
   position: relative;
   right: 1px;
+  
 }
 
 .prodTitle:hover {
@@ -31,6 +32,7 @@
 
 .prodSectionTitle {
   font-size: 2rem;
+  font-weight: 300;
 }
 
 /* Grid Section */

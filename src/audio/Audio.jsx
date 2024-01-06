@@ -1,52 +1,9 @@
 import "../styles/App.css";
 import "../styles/Audio.css";
+import booksArray from "../data/audio-data";
 
 function Audio() {
-  const audioInfo = [
-    {
-      url: "https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png",
-      size: [2, 2],
-    },
-    {
-      url: "https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png",
-    },
-    {
-      url: "https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png",
-    },
-    {
-      url: "https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png",
-    },
-    {
-      url: "https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png",
-    },
-    {
-      url: "https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png",
-    },
-    {
-      url: "https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png",
-    },
-    {
-      url: "https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png",
-    },
-    {
-      url: "https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png",
-    },
-    {
-      url: "https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png",
-    },
-    {
-      url: "https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png",
-    },
-    {
-      url: "https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png",
-    },
-    {
-      url: "https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png",
-    },
-    {
-      url: "https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png",
-    },
-  ];
+  
 
   return (
     <main className="audioPageFull">
@@ -63,12 +20,7 @@ function Audio() {
               autem! Nam facere voluptatibus nostrum incidunt tempora ipsa
               impedit cumque.
             </p>
-            <img
-              className="audioImg audioImgLarge"
-              src="https://www.fredsmithxmastrees.com/wp-content/uploads/2017/04/Square-500x500-dark-grey-300x300.png"
-              key="audioImgLarge"
-            ></img>
-            {audioInfo.map(function callback(value, index) {
+            {booksArray.map(function callback(value, index) {
               let leftOrRightCol = ''
               if (index % 2 === 0) {
                 leftOrRightCol = "audioImgColRight"
@@ -76,9 +28,9 @@ function Audio() {
 
               return (
                 <img
-                  className={`audioImg audioImg${index + 1} ${leftOrRightCol}`}
-                  src={value.url}
-                  key={`audioImg${index + 1}`}
+                  className={`audioImg audioImg${index} ${leftOrRightCol}`}
+                  src={value.img}
+                  key={value.name}
                 ></img>
               );
             })}
