@@ -1,7 +1,7 @@
 /* ----------Music Page---------- */
 
 .musicPageFull {
-  margin: 56px 0;
+  margin: 36px 0;
 }
 
 .musicContainer {
@@ -311,7 +311,7 @@
     justify-items: center;
     align-items: stretch;
     gap: 20px;
-    padding: 14px 58px;
+    padding: 32px;
   }
 
   .pqImg1 {
@@ -489,8 +489,8 @@
   }
 
   .musicInfoDropdown {
-    /* justify-self: left; */
-    margin-bottom: 5px;
+    position: relative;
+    top: 16px;
   }
 
   #example-collapse-text {
@@ -521,6 +521,11 @@
     display: inline;
     justify-self: center;
   }
+  
+  .musicInfoDropdown {
+    position: relative;
+    top: 16px;
+  }
 
   #example-collapse-text {
     max-width: 350px;
@@ -547,6 +552,11 @@
     justify-self: center;
   }
 
+  .musicInfoDropdown {
+    position: relative;
+    top: 16px;
+  }
+
   #example-collapse-text {
     max-width: 300px;
   }
@@ -559,7 +569,8 @@
 @media (max-width: 695px) {
 
   .musicContainer {
-    margin: -20px 39px 20px;
+    margin: -20px 36px 20px;
+    padding: 0
   }
 
   .nihiloxicaGridSection {
@@ -568,7 +579,7 @@
   .musImg {
     width: calc(100vw - 80px);
     height: calc(100vw - 62px);
-    padding-bottom: 2px;
+    padding-bottom: 18px;
   }
 
   .musImgSmall {
@@ -589,4 +600,5 @@
     font-size: 2rem;
     margin-bottom: 30px;
   }
+  
 }
