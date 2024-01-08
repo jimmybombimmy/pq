@@ -574,7 +574,7 @@
   .musImgSmall {
     width: calc(100vw - 64px);
     /* height: calc(100vw - 62px); */
-    padding-bottom: 2px;
+    padding-bottom: 18px;
   }
   
   .nihImg5 {
