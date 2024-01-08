@@ -146,8 +146,12 @@
     height: auto;
     width: calc(100vw - 76px);
     justify-self: center;
-    margin: 40px auto;
+    margin: 0px auto;
     color: grey;
+  }
+
+  .prodContainer {
+    margin-top: 42px;
   }
 
   .prodGridSection {

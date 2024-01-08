@@ -134,22 +134,6 @@ p {
   padding: 0 10px 0 10px;
 }
 
-/* .navLogoHover {
-  display: none;
-}
-
-.navLogoHover:hover {
-  display: inline-block;
-}
-
-.navLogoLeave {
-  display: inline-block
-}
-
-.navLogoLeave:hover {
-  display: none;
-} */
-
 /* Nav Media Queries */
 
 @media (max-width: 1063px) {

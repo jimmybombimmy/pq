@@ -58,7 +58,7 @@ function NavbarFile() {
                     <img
                       onMouseOver={(e) => (e.currentTarget.src = emailDark)}
                       onMouseOut={(e) => (e.currentTarget.src = emailLight)}
-                      className="navLogoDD "
+                      className="navLogoDD"
                       src={emailLight}
                     ></img>
                   </a>
@@ -94,7 +94,7 @@ function NavbarFile() {
                 <img
                   onMouseOver={(e) => (e.currentTarget.src = emailDark)}
                   onMouseOut={(e) => (e.currentTarget.src = emailLight)}
-                  className="navLogo "
+                  className="navLogo email2Delete"
                   src={emailLight}
                 ></img>
               </a>
