@@ -61,6 +61,10 @@
 }
 
 @media (min-width: 1064px) {
+  .musicPageFull {
+    margin-top: 58px;
+  }
+
   .musicContainer {
     margin: auto;
     max-width: 1000px;
