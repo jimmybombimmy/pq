@@ -3,6 +3,15 @@ import Logo from "./Logo";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useState } from "react";
 
+import instaDark from "../../img/icons/instagram-hover.png"
+import instaLight from "../../img/icons/instagram.png"
+import facebookDark from "../../img/icons/facebook-hover.png"
+import facebookLight from "../../img/icons/facebook.png"
+import bandcampDark from "../../img/icons/bandcamp-hover.png"
+import bandcampLight from "../../img/icons/facebook.png"
+import emailDark from "../../img/icons/email-hover.png"
+import emailLight from "../../img/icons/email.png"
+
 function NavbarFile() {
   const [instagramSrc, setInstagramSrc] = useState(
     "../img/icons/instagram.png"
@@ -30,10 +39,10 @@ function NavbarFile() {
                   <a href="http://www.instagram.com/pqjonez" target="_blank">
                     <img
                       onMouseOver={() => {
-                        setInstagramSrc("../img/icons/instagram-hover.png");
+                        setInstagramSrc({instaDark});
                       }}
                       onMouseLeave={() => {
-                        setInstagramSrc("../img/icons/instagram.png");
+                        setInstagramSrc({instaLight});
                       }}
                       className="navLogoDD"
                       src={instagramSrc}
@@ -42,10 +51,10 @@ function NavbarFile() {
                   <a href="http://www.facebook.com/pqjonez" target="_blank">
                     <img
                       onMouseOver={() => {
-                        setFacebookSrc("../img/icons/facebook-hover.png");
+                        setFacebookSrc({facebookDark});
                       }}
                       onMouseLeave={() => {
-                        setFacebookSrc("../img/icons/facebook.png");
+                        setFacebookSrc({facebookLight});
                       }}
                       className="navLogoDD"
                       src={facebookSrc}
@@ -54,10 +63,10 @@ function NavbarFile() {
                   <a href="http://www.pqjonez.bandcamp.com" target="_blank">
                     <img
                       onMouseOver={() => {
-                        setBandcampSrc("../img/icons/bandcamp-hover.png");
+                        setBandcampSrc({bandcampDark});
                       }}
                       onMouseLeave={() => {
-                        setBandcampSrc("../img/icons/bandcamp.png");
+                        setBandcampSrc({bandcampLight});
                       }}
                       className="navLogoDD"
                       src={bandcampSrc}
@@ -65,10 +74,10 @@ function NavbarFile() {
                   </a>
                   <img
                     onMouseOver={() => {
-                      setEmailSrc("../img/icons/email-hover.png");
+                      setEmailSrc({emailDark});
                     }}
                     onMouseLeave={() => {
-                      setEmailSrc("../img/icons/email.png");
+                      setEmailSrc({emailLight});
                     }}
                     className="navLogoDD "
                     src={emailSrc}
