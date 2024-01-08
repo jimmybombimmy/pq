@@ -3,14 +3,7 @@ import Logo from "./Logo";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useState } from "react";
 
-import instaDark from "../../img/icons/instagram-hover.png"
-import instaLight from "../../img/icons/instagram.png"
-import facebookDark from "../../img/icons/facebook-hover.png"
-import facebookLight from "../../img/icons/facebook.png"
-import bandcampDark from "../../img/icons/bandcamp-hover.png"
-import bandcampLight from "../../img/icons/facebook.png"
-import emailDark from "../../img/icons/email-hover.png"
-import emailLight from "../../img/icons/email.png"
+import { instaDark, instaLight, facebookDark, facebookLight, bandcampDark, bandcampLight, emailDark, emailLight } from "../data/nav-data";
 
 function NavbarFile() {
   const [instagramSrc, setInstagramSrc] = useState(
