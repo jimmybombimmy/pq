@@ -90,6 +90,7 @@ p {
   margin: 0;
   /* border-bottom: 1px solid rgb(222,226,230); */
   padding: 0;
+  display: inline-block;
 }
 
 /* Center Nav */
@@ -132,6 +133,22 @@ p {
   height: 32px;
   padding: 0 10px 0 10px;
 }
+
+/* .navLogoHover {
+  display: none;
+}
+
+.navLogoHover:hover {
+  display: inline-block;
+}
+
+.navLogoLeave {
+  display: inline-block
+}
+
+.navLogoLeave:hover {
+  display: none;
+} */
 
 /* Nav Media Queries */
 

@@ -1,18 +1,19 @@
 import "../styles/App.css";
 import Logo from "./Logo";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { useState } from "react";
 
-import { instaDark, instaLight, facebookDark, facebookLight, bandcampDark, bandcampLight, emailDark, emailLight } from "../data/nav-data";
+import {
+  instaDark,
+  instaLight,
+  facebookDark,
+  facebookLight,
+  bandcampDark,
+  bandcampLight,
+  emailDark,
+  emailLight,
+} from "../data/nav-data.js";
 
 function NavbarFile() {
-  const [instagramSrc, setInstagramSrc] = useState(
-    "../img/icons/instagram.png"
-  );
-  const [facebookSrc, setFacebookSrc] = useState("../img/icons/facebook.png");
-  const [bandcampSrc, setBandcampSrc] = useState("../img/icons/bandcamp.png");
-  const [emailSrc, setEmailSrc] = useState("../img/icons/email.png");
-
   return (
     <main>
       <nav className="navFile">
@@ -31,104 +32,70 @@ function NavbarFile() {
                 <div className="burgerSocials">
                   <a href="http://www.instagram.com/pqjonez" target="_blank">
                     <img
-                      onMouseOver={() => {
-                        setInstagramSrc({instaDark});
-                      }}
-                      onMouseLeave={() => {
-                        setInstagramSrc({instaLight});
-                      }}
+                      onMouseOver={(e) => (e.currentTarget.src = instaDark)}
+                      onMouseOut={(e) => (e.currentTarget.src = instaLight)}
                       className="navLogoDD"
-                      src={instagramSrc}
+                      src={instaLight}
                     ></img>
                   </a>
                   <a href="http://www.facebook.com/pqjonez" target="_blank">
                     <img
-                      onMouseOver={() => {
-                        setFacebookSrc({facebookDark});
-                      }}
-                      onMouseLeave={() => {
-                        setFacebookSrc({facebookLight});
-                      }}
+                      onMouseOver={(e) => (e.currentTarget.src = facebookDark)}
+                      onMouseOut={(e) => (e.currentTarget.src = facebookLight)}
                       className="navLogoDD"
-                      src={facebookSrc}
+                      src={facebookLight}
                     ></img>
                   </a>
                   <a href="http://www.pqjonez.bandcamp.com" target="_blank">
                     <img
-                      onMouseOver={() => {
-                        setBandcampSrc({bandcampDark});
-                      }}
-                      onMouseLeave={() => {
-                        setBandcampSrc({bandcampLight});
-                      }}
+                      onMouseOver={(e) => (e.currentTarget.src = bandcampDark)}
+                      onMouseOut={(e) => (e.currentTarget.src = bandcampLight)}
                       className="navLogoDD"
-                      src={bandcampSrc}
+                      src={bandcampLight}
                     ></img>
                   </a>
-                  <img
-                    onMouseOver={() => {
-                      setEmailSrc({emailDark});
-                    }}
-                    onMouseLeave={() => {
-                      setEmailSrc({emailLight});
-                    }}
-                    className="navLogoDD "
-                    src={emailSrc}
-                  ></img>
+                  <a href="mailto:peter.jones.sound@gmail.com?subject = Feedback&body = Message">
+                    <img
+                      onMouseOver={(e) => (e.currentTarget.src = emailDark)}
+                      onMouseOut={(e) => (e.currentTarget.src = emailLight)}
+                      className="navLogoDD "
+                      src={emailLight}
+                    ></img>
+                  </a>
                 </div>
               </Nav>
             </Navbar.Collapse>
             <div className="sticky-top navInvRight" href="#">
               <a href="http://www.instagram.com/pqjonez" target="_blank">
                 <img
-                  onMouseOver={() => {
-                    setInstagramSrc("../img/icons/instagram-hover.png");
-                  }}
-                  onMouseLeave={() => {
-                    setInstagramSrc("../img/icons/instagram.png");
-                  }}
+                  onMouseOver={(e) => (e.currentTarget.src = instaDark)}
+                  onMouseOut={(e) => (e.currentTarget.src = instaLight)}
                   className="navLogo"
-                  src={instagramSrc}
+                  src={instaLight}
                 ></img>
               </a>
               <a href="http://www.facebook.com/pqjonez" target="_blank">
                 <img
-                  onMouseOver={() => {
-                    setFacebookSrc("../img/icons/facebook-hover.png");
-                  }}
-                  onMouseLeave={() => {
-                    setFacebookSrc("../img/icons/facebook.png");
-                  }}
+                  onMouseOver={(e) => (e.currentTarget.src = facebookDark)}
+                  onMouseOut={(e) => (e.currentTarget.src = facebookLight)}
                   className="navLogo"
-                  src={facebookSrc}
+                  src={facebookLight}
                 ></img>
               </a>
               <a href="http://www.pqjonez.bandcamp.com" target="_blank">
                 <img
-                  onMouseOver={() => {
-                    setBandcampSrc("../img/icons/bandcamp-hover.png");
-                  }}
-                  onMouseLeave={() => {
-                    setBandcampSrc("../img/icons/bandcamp.png");
-                  }}
+                  onMouseOver={(e) => (e.currentTarget.src = bandcampDark)}
+                  onMouseOut={(e) => (e.currentTarget.src = bandcampLight)}
                   className="navLogo"
-                  src={bandcampSrc}
+                  src={bandcampLight}
                 ></img>
               </a>
-              <a
-                href="http://www.google.com"
-                className="email2Delete"
-                target="_blank"
-              >
+              <a href="mailto:peter.jones.sound@gmail.com?subject = Feedback&body = Message">
                 <img
-                  onMouseOver={() => {
-                    setEmailSrc("../img/icons/email-hover.png");
-                  }}
-                  onMouseLeave={() => {
-                    setEmailSrc("../img/icons/email.png");
-                  }}
+                  onMouseOver={(e) => (e.currentTarget.src = emailDark)}
+                  onMouseOut={(e) => (e.currentTarget.src = emailLight)}
                   className="navLogo "
-                  src={emailSrc}
+                  src={emailLight}
                 ></img>
               </a>
             </div>
