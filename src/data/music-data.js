@@ -1,4 +1,4 @@
-import pqFaceImg from "`../../img/pq-face-1.png`";
+import pqFaceImg from "../../img/pq-face-1.png";
 import nihBandImg from "../../img/nihiloxica-band1.png";
 
 export const pqReleases = [
