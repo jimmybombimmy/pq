@@ -22,7 +22,7 @@ function Audio() {
             </p>
             {booksArray.map(function callback(value, index) {
               let leftOrRightCol = ''
-              if (index % 2 === 0) {
+              if (index % 2 === 1) {
                 leftOrRightCol = "audioImgColRight"
               }
 
