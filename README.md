@@ -29,8 +29,8 @@ Github: <a href="https://github.com/jimmybombimmy">jimmybombimmy</a>
 LinkedIn: <a href="https://www.linkedin.com/in/jamespeters92/">jamespeters92</a></p>
 <p><strong>Pete Jones - Design & Content Writing</strong>
 <br> 
-Bandcamp: <a href="https://pqjonez.bandcamp.com/">pq Bancamp Page </a></p>
-Email: peter.jones.sound@gmail.com
+Bandcamp: <a href="https://pqjonez.bandcamp.com/">pq Bancamp Page </a>
+Email: peter.jones.sound@gmail.com</p>
 
 <h2>Acknowledgement:</h2>
 <p>Special thanks to Pete Jones for providing all necessary information/descriptions .</p>
