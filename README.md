@@ -1,7 +1,7 @@
 <h1>PQ: Music Producer Website</h1>
 <p>This project represents the code for a website I created for Music Producer/Audio Engineer PQ (AKA Pete Jones). This website is created with a minimal-design approach, yet extensive and responsive grid design to represent his body of work interactively through Bandcamp embeds and interactive texts.</p>
 
-<p><strong>Note:</strong> the 'Audio' and 'About' pages are yet to be complete while I am waiting on the last bit of information to add to the pages.</p>
+<p><strong>Note:</strong> The 'Audio' and 'About' pages are yet to be complete while I am waiting on the last bit of information to add to the pages.</p>
   
 <p><strong>Tech-stack</strong></p>
 <ul>
@@ -23,7 +23,11 @@
 </ol>
 
 <h2>Created By:</h2>
-<p><strong>James Peters</strong>
+<p><strong>James Peters - Design & Development</strong>
+<br> 
+Github: <a href="https://github.com/jimmybombimmy">jimmybombimmy</a>
+LinkedIn: <a href="https://www.linkedin.com/in/jamespeters92/">jamespeters92</a></p>
+<p><strong>Pete Jones - Design & Content Writing</strong>
 <br> 
 Github: <a href="https://github.com/jimmybombimmy">jimmybombimmy</a>
 LinkedIn: <a href="https://www.linkedin.com/in/jamespeters92/">jamespeters92</a></p>
